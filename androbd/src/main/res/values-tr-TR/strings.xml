@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <!--  AndrOBD -->
+    <string name="app_name" translatable="false">AndrOBD</string>
+    <string name="copyright_fr3ts0n" translatable="false">© 2015-2018 fr3ts0n</string>
+    <string name="translation_credits">Translation by alpay</string>
+    <string name="app_description">ELM327 için OBD teşhis programı</string>
+    <string name="send">Gönder</string>
+    <string name="not_connected">Bağlanamadı</string>
+    <string name="title_connecting">Bağlanıyor</string>
+    <string name="title_connected_to">Bağlandı %s</string>
+    <string name="title_not_connected">Bağlanamadı</string>
+    <string name="title">Başlık</string>
+    <string name="welcome_to">Hoşgeldiniz</string>
+    <string name="logo">Logo</string>
+    <string name="back_again_to_exit">Uygulamadan çıkmak için tekrar basın.</string>
+    <!-- menu  -->
+    <string name="action_connect">Bağlan</string>
+    <string name="obd_none">Servis yok</string>
+    <string name="obd_services">OBD Servis</string>
+    <string name="obd_veh_info">OBD Araç Bilgisi</string>
+    <string name="obd_data">OBD Data</string>
+    <string name="service_freezeframes">OBD verileri tut</string>
+    <string name="obd_codes">OBD hata kodları</string>
+    <string name="obd_permanentcodes">OBD kalıcı hata kodları</string>
+    <string name="obd_pendingcodes">OBD geçici hata kodları</string>
+    <string name="obd_clearcodes">Hataları temizle</string>
+    <string name="obd_clear_info">
+This will reset the MIL and clear all emission-related diagnostic\n
+information, including:\n
+ - Diagnostic trouble codes\n
+ - Freeze frame data\n
+ - Oxygen sensor test data\n
+ - Status of system monitoring tests\n
+ - On-board monitoring tests results\n
+ - Distance travelled while MIL activated\n
+ - Number of warm-ups since DTCs cleared\n
+ - Distance travelled since DTCs cleared\n
+ - Engine run time while MIL activated\n
+ - Time since DTCs cleared\n\n
+Other manufacturer specific clearing/resetting actions may occur.\n
+The loss of data may cause the vehicle to run poorly for a short \n
+period of time while the ECU recalibrates itself.
+     </string>
+
+    <!--  BtDeviceListActivity -->
+    <string name="scanning">Taranıyor</string>
+    <string name="select_device">Adaptör Seç</string>
+    <string name="none_paired">OBD eşleşmedi</string>
+    <string name="none_found">OBD bulunamadı</string>
+    <string name="title_paired_devices">Eşleşen Ciazlar</string>
+    <string name="title_other_devices">Diğer müsait cihazlar</string>
+    <string name="button_scan">OBD cihazları tara</string>
+
+    <!-- ExportTask -->
+    <string name="send_to">Gönder</string>
+    <string name="share">paylaş</string>
+    <string name="time">Zaman [s]</string>
+    <string name="chart">Grafik</string>
+    <string name="demo_stopped">DEMO modu durdu</string>
+    <string name="demo_started">DEMO mod başladı</string>
+    <string name="snapshot">Yedek</string>
+    <string name="save">Ölçümleri kaydet</string>
+    <string name="load">Ölçümleri Oku</string>
+    <string name="saved_data">Kayıtlı veriler</string>
+    <string name="loaded">Yüklendi</string>
+    <string name="saved">Kaydedildi</string>
+
+    <string name="connected_to">"Bağlandı "</string>
+    <string name="demo">Demo…</string>
+    <string name="saving_data">veriler kaydediliyor …</string>
+    <string name="loading_data">Veriler açılıyor …</string>
+    <string name="dashboard">Panel</string>
+    <string name="graph_actions">Grafik Özellikleri</string>
+    <string name="hud">Hayalet Ekran. -Ayna modu-</string>
+    <string name="filter">Filtre seçildi</string>
+    <string name="unfilter">Filtre temizlendi</string>
+
+    <!-- Settings -->
+    <string name="settings">ayarlar</string>
+    <string name="common_settings">Genel ayarlar</string>
+    <string name="measure_system_description">Ölçü birimi (metrik / ingiliz)</string>
+    <string name="measure_system">Ölçüm Sistemi</string>
+    <string name="metric">metrik</string>
+    <string name="imperial">ingiliz</string>
+    <string-array name="measure_options" translatable="false">
+        <item>@string/metric</item>
+        <item>@string/imperial</item>
+    </string-array>
+    <string-array name="measure_option_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string name="items_for_display">Ekranda gösterilen veriler</string>
+    <string name="items_for_display_descr">Tüm verileri ekranda göster …</string>
+    <string-array name="empty" translatable="false"/>
+
+    <string name="debugging">Hata Ayıkla</string>
+    <string name="logging_level">Log seviyesi</string>
+    <string name="logging_level_description">Debug modunda log seviyesi</string>
+    <string name="master">Birincil</string>
+    <string name="comm_io">haberleşiyor i/o</string>
+    <string name="protocol">protokol</string>
+    <string name="process_vars">işlenen değişkenler</string>
+    <string name="data">data</string>
+    <string-array name="logging_options" translatable="false">
+        <item>OFF</item>
+        <item>SEVERE</item>
+        <item>WARNING</item>
+        <item>INFO</item>
+        <item>CONFIG</item>
+        <item>FINE</item>
+        <item>FINER</item>
+        <item>FINEST</item>
+        <item>ALL</item>
+    </string-array>
+
+    <!--
+    * key values for restore options
+    * - must align with enum MainActivity.PRESELECT
+    -->
+    <string-array name="restore_keys" translatable="false">
+        <item>LAST_DEV_ADDRESS</item>
+        <item>LAST_ECU_ADDRESS</item>
+        <item>LAST_SERVICE</item>
+        <item>LAST_ITEMS</item>
+        <item>LAST_VIEW_MODE</item>
+    </string-array>
+
+    <!--
+    * display values for restore options
+    * - must align with enum MainActivity.PRESELECT
+    -->
+    <string-array name="restore_options" translatable="false">
+        <item>@string/last_elm</item>
+        <item>@string/last_ecu</item>
+        <item>@string/last_service</item>
+        <item>@string/last_data_items</item>
+        <item>@string/last_view_mode</item>
+    </string-array>
+
+    <string name="last_elm">re-connect last ELM-adapter</string>
+    <string name="last_ecu">re-connect last ECU</string>
+    <string name="last_service">last OBD service</string>
+    <string name="last_data_items">last selected data items</string>
+    <string name="last_view_mode">last data view mode</string>
+
+    <string name="keep_screen_on">Ana Ekranda sabitle</string>
+    <string name="keep_screen_on_description">Ana ekranda ekranı açık tut</string>
+
+    <string name="development_options">Geliştirme seçenekleri</string>
+    <string name="dev_opt_description">Hata ayıklama ve özelleştirme ayarları</string>
+    <string name="extension_files">Protokol özelleşmiş dosyalar.(csv)</string>
+    <string name="conversions">Veri Dönüşümleri</string>
+    <string name="data_items">Veri tipleri</string>
+    <string name="fault_codes">Hata kodları</string>
+    <string name="select_extension">.csv dosyasını seç…</string>
+    <string name="extension_loading">Özelleştiriliyor</string>
+    <string name="check_cust_settings">Lütfen özelleştirme ayarlarını kontrol et \n</string>
+    <string name="obd_options">OBD ayarları </string>
+    <string name="obd_opt_description">OBD protokol ayarları / Araç iletişimi</string>
+    <string name="select_protocol">Tercih edilen OBD protokol </string>
+
+    <string name="plugin_manager">Eklenti Yönetimi</string>
+    <string name="configure">Ayarla</string>
+
+    <string name="select_fault_code">Hata kodunu seç …</string>
+    <string name="select_medium">Adaptör Tipi …</string>
+
+    <string name="refreshing">Taranıyor …</string>
+    <string name="devices_found">%s USB cihazı(ları) bulunda</string>
+    <string name="min_elm_timeout">Min. ELM zaman aşımı [ms]</string>
+    <string name="unabletoconnect">adaptöre bağlanamadı</string>
+    <string name="connectionlost">Adaptörle bağlantı koptu</string>
+    <string name="elm_timeout_descr">ELM için min. Bekleme süresi (ms)</string>
+    <string name="day_night_mode">Gündüz/Gece modu</string>
+    <string name="night_mode_description">Arka planı koyu yap</string>
+    <string name="night_mode">Gece Modu</string>
+    <string name="disable_elm_cmds">ELM konutlarını engelle</string>
+    <string name="disable_elm_cmds_descr">ELM konutlarını Aç/Kapa</string>
+    <string name="elm_adaptive_timing">ELM uyarlama zamanı</string>
+    <string name="disabled">etkin değil</string>
+    <string name="enabled">etkin</string>
+    <string name="elm_adaptive_timing_descr">ELm sürücüsü uyarlama zamanına erişsin</string>
+    <string name="elm_reset_on_nrc">NRC'yi resetle</string>
+    <string name="elm_reset_on_nrc_descr">NRC hatası aldığında ELM resetlensin mi?</string>
+    <string name="select_ecu_addr">Ecu seç …</string>
+    <string name="disconnect">Bağlantıyı kes</string>
+    <string name="reset_preselections">Son seçimleri temizle</string>
+    <string name="use_last_settings_description">Bir önceki ayarları kullan(BT adresi, ECU adresi, Ekran ayarları …)</string>
+    <string name="use_last_settings">son ayarları kullan<string>
+    <string name="common_settings_description">Uygulama kontrolü ortak ayarları</string>
+    <string name="secure_connect">Güvenli Bağlantı</string>
+    <string name="secure_connect_description">Bluetooth ile Güvenli bağlantı kur.</string>
+    <string name="elm_options">ELM ayarları</string>
+    <string name="last_none">Hiçbiri</string>
+    <string name="elm_custom_init">ELM Özel başlangıç</string>
+    <string name="elm_custom_init_descr">ELM özel başlangıç konutu</string>
+
+    <!-- ELM communication states -->
+    <string name="UNDEFINED">Tanımsız</string>
+    <string name="INITIALIZING">yükleniyor</string>
+    <string name="INITIALIZED">yüklendi</string>
+    <string name="ECU_DETECT">ECU bulunuyor</string>
+    <string name="ECU_DETECTED">ECU bulundu</string>
+    <string name="CONNECTING">bağlanıyor</string>
+    <string name="CONNECTED">bağlandı</string>
+    <string name="NODATA">veri yok</string>
+    <string name="STOPPED">Durdu</string>
+    <string name="DISCONNECTED">Bağlantı kesildi</string>
+    <string name="BUSERROR">BUS hatası</string>
+    <string name="DATAERROR">DATA hatası</string>
+    <string name="RXERROR">RX hatası</string>
+    <string name="ERROR">Hata</string>
+    <string name="obd_error">OBD protokol hatası</string>
+    <string name="device_address_description">ELM IP adresi</string>
+    <string name="device_address">ELM IP adresi</string>
+    <string name="device_port_description">ELM IP port</string>
+    <string name="device_port">ELM IP port</string>
+    <string name="data_disable_max">veri engelleme limiti</string>
+    <string name="data_disable_max_description">Ardışık hatalı verilerein engellenme sınırı</string>
+    <string name="autohide_toolbar">Araç çubuğunu gizle</string>
+    <string name="autohide_toolbar_description">Araç çubuğunu otomatik gizle</string>
+    <string name="autohide_delay">araç çubuğunun gizlenme süresi [s]</string>
+    <string name="autohide_delay_description">araç çubuğunun gizlenme süresi [s]</string>
+    <!-- the string array corresponding to state enum -->
+    <string-array name="elmcomm_states" translatable="false">
+        <item>@string/UNDEFINED</item>
+        <item>@string/INITIALIZING</item>
+        <item>@string/INITIALIZED</item>
+        <item>@string/ECU_DETECT</item>
+        <item>@string/ECU_DETECTED</item>
+        <item>@string/CONNECTING</item>
+        <item>@string/CONNECTED</item>
+        <item>@string/NODATA</item>
+        <item>@string/STOPPED</item>
+        <item>@string/DISCONNECTED</item>
+        <item>@string/BUSERROR</item>
+        <item>@string/DATAERROR</item>
+        <item>@string/RXERROR</item>
+        <item>@string/ERROR</item>
+    </string-array>
+
+    <!-- CSV export options -->
+    <string name="csv_export_options">CSV kayıt ayarları</string>
+    <string name="csv_export_description">CVS kayıt ayarları</string>
+    <string name="csv_field_delimiter">CVS dosyası virgülle ayır</string>
+    <string name="csv_field_delimiter_description">CVS dosyasındaki verileri virgülle ayır</string>
+    <string name="csv_rec_delimiter">CSV kaydını virgül ile ayır</string>
+    <string name="csv_rec_delimiter_description">CVS verilerini virgül ile ayır</string>
+    <string name="csv_text_quoted">Tırnak içinde alındı</string>
+    <string name="csv_text_quoted_description">CVS verilerini tırnak içinde ayır</string>
+    <string name="tab">sekme</string>
+    <string name="comma">,</string>
+    <string name="semicolon">;</string>
+    <string name="send_after_export">veriler alındığında gönder</string>
+    <string name="send_after_export_descr">verilerin cvs dosyasına yazılmasını bekle.</string>
+    <string name="plugin_manager_desc">Yüklü eklentileri yönet</string>
+    <string name="toolbar_overlay">Üstte göster</string>
+    <string name="toolbar_overlay_sum">Araç çubuğunu üstte tut</string>
+    <string name="license">Lisans …</string>
+    <string name="donation">Projeyi Destekle …</string>
+    <string name="libraries">eklentiler …</string>
+    <string name="libraries_sum">Projede kullanılan eklentiler …</string>
+    <string name="release_history">Version geçmişi …</string>
+
+    <string name="app_license_sum" translatable="false">
+        OBD bağlantı altyapısı lisansı\n
+        * GNU v3.0 lisansa tabidir
+    </string>
+    <string name="url_app_license" translatable="false">https://github.com/fr3ts0n/AndrOBD/blob/master/LICENSE</string>
+    <string name="url_app_mainpage" translatable="false">https://github.com/fr3ts0n/AndrOBD/</string>
+    <string name="url_app_releases" translatable="false">https://github.com/fr3ts0n/AndrOBD/releases/</string>
+    <string name="url_app_translation" translatable="false">https://hosted.weblate.org/projects/androbd/strings/</string>
+    <string name="lib_usb_serial" translatable="false">usb-serial-for-android</string>
+    <string name="lib_usb_serial_sum" translatable="false">
+        USB seri bağlantı kütüphanesi lisansı\n
+        * GNU Lesser General Public License v2.1
+    </string>
+    <string name="lib_achart" translatable="false">AChartEngine</string>
+    <string name="lib_achart_sum" translatable="false">
+        Grafik kütüphanesi lisansı\n
+        * Apache 2.0 license
+    </string>
+    <string-array name="csv_field_delim_options" translatable="false">
+        <item>@string/tab</item>
+        <item>@string/comma</item>
+        <item>@string/semicolon</item>
+    </string-array>
+    <string-array name="csv_field_delim_values" translatable="false">
+        <item>\t</item>
+        <item>,</item>
+        <item>;</item>
+    </string-array>
+    <string-array name="csv_record_delim_options" translatable="false">
+        <item>CR</item>
+        <item>LF</item>
+        <item>CRLF</item>
+    </string-array>
+    <string-array name="csv_record_delim_values" translatable="false">
+        <item>\r</item>
+        <item>\n</item>
+        <item>\r\n</item>
+    </string-array>
+
+</resources>
